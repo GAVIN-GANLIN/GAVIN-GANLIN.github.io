@@ -1,7 +1,6 @@
 # Ganlin Chen - Personal Website
 
-Academic portfolio for Ganlin Chen, a computational materials scientist at the
-University of Michigan.
+Academic portfolio for Ganlin Chen, a computational materials science researcher.
 
 ## Publishing with GitHub Pages
 
