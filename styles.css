@@ -455,24 +455,24 @@ footer p {
 }
 /* Smaller research philosophy figure */
 .philosophy {
-  max-width: 680px;
+  max-width: 760px;
 }
 
 .philosophy-figure {
-  width: 620px;
+  width: 760px;
   max-width: 100%;
   margin: 0;
   padding: 8px;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: var(--surface);
+  border: none;
+  border-radius: 0;
+  background: var(--paper);
   box-shadow: 0 10px 28px rgba(50, 58, 52, 0.06);
 }
 
 .philosophy-figure img {
   display: block;
   width: 100%;
-  max-height: 190px;
+  max-height: 230px;
   object-fit: contain;
   border-radius: 8px;
 }
