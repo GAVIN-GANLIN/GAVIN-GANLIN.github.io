@@ -215,8 +215,9 @@ li + li {
 }
 
 .philosophy-figure {
-  margin: 0;
-  padding: clamp(12px, 2vw, 18px);
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 12px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--surface);
