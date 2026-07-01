@@ -459,7 +459,7 @@ footer p {
 }
 
 .philosophy-figure {
-  width: 860px;
+  width: 960px;
   max-width: 100%;
   margin: 0;
   padding: 0;
@@ -472,7 +472,7 @@ footer p {
 .philosophy-figure img {
   display: block;
   width: 100%;
-  max-height: 320px;
+  max-height: 360px;
   object-fit: contain;
   border-radius: 0;
 }
