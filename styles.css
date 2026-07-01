@@ -455,7 +455,7 @@ footer p {
 }
 /* Smaller research philosophy figure */
 .philosophy {
-  width: min(1160px, calc(100vw - 48px));
+  width: min(980px, calc(100vw - 48px));
   max-width: none;
   margin-left: 50%;
   transform: translateX(-50%);
