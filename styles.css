@@ -225,8 +225,9 @@ li + li {
 
 .philosophy-figure img {
   display: block;
-  width: 100%;
+  width: min(100%, 820px);
   height: auto;
+  margin: 0 auto;
   border-radius: 12px;
 }
 
