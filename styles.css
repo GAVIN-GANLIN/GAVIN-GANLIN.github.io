@@ -210,6 +210,29 @@ li + li {
   margin-top: 7px;
 }
 
+.philosophy {
+  padding-top: 54px;
+}
+
+.philosophy-figure {
+  margin: 0;
+  padding: clamp(12px, 2vw, 18px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 18px 48px rgba(50, 58, 52, 0.08);
+}
+
+.philosophy-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+
+
+
 .section {
   padding: 62px 0;
   border-bottom: 1px solid var(--line);
