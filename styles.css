@@ -466,7 +466,7 @@ footer p {
   border: none;
   border-radius: 0;
   background: var(--paper);
-  box-shadow: 0 10px 28px rgba(50, 58, 52, 0.06);
+  box-shadow: none;
 }
 
 .philosophy-figure img {
