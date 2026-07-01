@@ -481,3 +481,6 @@ footer p {
   object-fit: contain;
   border-radius: 0;
 }
+.profile-views {
+  margin-top: 16px;
+}
