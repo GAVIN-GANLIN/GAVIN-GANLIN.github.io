@@ -111,7 +111,7 @@ footer {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: 75% center;
+  object-position: 90% center;
   border-radius: 14px;
   border: 1px solid var(--line);
 }
