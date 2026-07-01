@@ -109,9 +109,9 @@ footer {
 .profile-photo {
   display: block;
   width: 100%;
-  aspect-ratio: 5 / 5;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
-  object-position: 90% 30%;
+  object-position: 90% 10%;
   border-radius: 14px;
   border: 1px solid var(--line);
 }
