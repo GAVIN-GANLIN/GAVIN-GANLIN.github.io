@@ -207,10 +207,9 @@ p {
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent-dark);
-  font-family: "Times New Roman", Times, serif;
-  font-size: 32px;
+  font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
@@ -359,6 +358,25 @@ li + li {
 
 .venue {
   font-size: 14px;
+}
+
+.presentation-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.presentation-list li {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 28px;
+}
+
+.pub-year {
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .two-column-section {
