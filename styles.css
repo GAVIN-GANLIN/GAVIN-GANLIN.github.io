@@ -207,6 +207,7 @@ p {
 .eyebrow {
   margin: 0 0 12px;
   color: var(--accent-dark);
+  font-family: "Times New Roman", Times, serif;
   font-size: 32px;
   font-weight: 800;
   letter-spacing: 0.03em;
