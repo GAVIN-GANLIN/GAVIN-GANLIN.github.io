@@ -147,7 +147,7 @@ h1 {
   max-width: 700px;
   margin: 22px 0 0;
   color: var(--muted);
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .blank-page {
@@ -165,7 +165,7 @@ h2 {
 
 h3 {
   margin: 0 0 8px;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.35;
 }
 
@@ -182,7 +182,7 @@ p {
 .profile-affiliation {
   margin-bottom: 20px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .profile-links {
@@ -190,7 +190,7 @@ p {
   gap: 7px;
   padding-top: 18px;
   border-top: 1px solid var(--line);
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -201,7 +201,7 @@ p {
 .about-copy > p {
   max-width: 700px;
   color: var(--ink);
-  font-size: 17px;
+  font-size: 24px;
 }
 
 .eyebrow {
@@ -274,7 +274,7 @@ li + li {
 
 .section-link {
   flex: none;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 800;
 }
 
@@ -306,7 +306,7 @@ li + li {
 .news-list span,
 .education-list span {
   color: var(--accent-dark);
-  font-size: 12px;
+  font-size: 24px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -352,13 +352,13 @@ li + li {
 
 .pub-title {
   color: var(--ink) !important;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
 }
 
 .venue {
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .presentation-list {
@@ -374,7 +374,7 @@ li + li {
 
 .pub-year {
   color: var(--accent-dark);
-  font-size: 12px;
+  font-size: 24px;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -430,7 +430,7 @@ footer {
   gap: 18px;
   padding: 30px 0 46px;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 24px;
 }
 
 footer p {
@@ -464,7 +464,7 @@ footer p {
 
 @media (max-width: 560px) {
   body {
-    font-size: 15px;
+    font-size: 24px;
   }
 
   .page-shell,
@@ -478,7 +478,7 @@ footer p {
 
   nav {
     gap: 10px 16px;
-    font-size: 13px;
+    font-size: 24px;
   }
 
   .intro-grid {
@@ -541,7 +541,7 @@ footer p {
 
 .philosophy-label {
   font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 0.08em;
 }
 
