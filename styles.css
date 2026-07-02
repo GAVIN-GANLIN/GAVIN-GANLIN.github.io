@@ -1,0 +1,545 @@
+:root {
+  --ink: #17251f;
+  --muted: #657069;
+  --paper: #f4f2ec;
+  --surface: #fffdf8;
+  --accent: #c95c31;
+  --accent-dark: #9f3f1e;
+  --green: #244a3b;
+  --line: #d9d7ce;
+  --soft-green: #e4ebe4;
+  --serif: "Newsreader", Georgia, serif;
+  --sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.68;
+}
+
+a {
+  color: var(--accent-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px clamp(22px, 5vw, 64px);
+  border-bottom: 1px solid rgba(23, 37, 31, 0.12);
+  background: rgba(244, 242, 236, 0.93);
+  backdrop-filter: blur(16px);
+}
+
+.site-title {
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: clamp(25px, 3vw, 34px);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.site-title:hover {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px 26px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+nav a {
+  color: var(--ink);
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--accent-dark);
+}
+
+.page-shell,
+footer {
+  width: min(1060px, calc(100% - 42px));
+  margin-inline: auto;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 330px) minmax(0, 1fr);
+  gap: clamp(34px, 6vw, 72px);
+  align-items: start;
+  padding: 58px 0 54px;
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-card {
+  position: sticky;
+  top: 96px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 18px 48px rgba(50, 58, 52, 0.08);
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 90% 35%;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--ink);
+}
+
+h1 {
+  margin: 22px 0 4px;
+  font-family: var(--serif);
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.page-hero {
+  padding: 62px 0 46px;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-hero h1 {
+  max-width: 820px;
+  margin: 0;
+  font-size: clamp(48px, 7vw, 82px);
+  letter-spacing: -0.045em;
+}
+
+.page-hero p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.blank-page {
+  min-height: 58vh;
+}
+
+h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(34px, 5vw, 54px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+p {
+  margin-top: 0;
+}
+
+.profile-subtitle {
+  margin-bottom: 8px;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.profile-affiliation {
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.profile-links {
+  display: grid;
+  gap: 7px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.about-copy {
+  padding-top: 6px;
+}
+
+.about-copy > p {
+  max-width: 700px;
+  color: var(--ink);
+  font-size: 17px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.research-interests {
+  max-width: 700px;
+  margin-top: 30px;
+  padding: 24px 26px;
+  border-left: 4px solid var(--green);
+  background: var(--soft-green);
+}
+
+.research-interests h3 {
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+li + li {
+  margin-top: 7px;
+}
+
+.section {
+  padding: 62px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 92px;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.philosophy {
+  padding-top: 54px;
+}
+
+.philosophy-figure {
+  margin: 0;
+  padding: clamp(12px, 2vw, 18px);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 18px 48px rgba(50, 58, 52, 0.08);
+}
+
+.philosophy-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.section-heading.with-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: end;
+}
+
+.section-link {
+  flex: none;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.news {
+  padding-top: 48px;
+}
+
+.news-list {
+  padding: 0;
+  list-style: none;
+}
+
+.news-list li {
+  display: grid;
+  grid-template-columns: 74px minmax(0, 1fr);
+  gap: 18px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+
+.news-list li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.news-list p {
+  margin: 0;
+}
+
+.news-list span,
+.education-list span {
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.content-list {
+  display: grid;
+  gap: 24px;
+}
+
+.content-list article {
+  padding: 24px 0 24px 24px;
+  border-left: 3px solid var(--line);
+}
+
+.content-list article:hover {
+  border-left-color: var(--green);
+}
+
+.content-list p,
+.publication-list p,
+.columns p,
+.education-list p {
+  color: var(--muted);
+}
+
+.publication-list {
+  padding-left: 24px;
+}
+
+.publication-list li {
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+
+.publication-list li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-list p {
+  margin-bottom: 4px;
+}
+
+.pub-title {
+  color: var(--ink) !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.38;
+}
+
+.venue {
+  font-size: 14px;
+}
+
+.two-column-section {
+  display: grid;
+  grid-template-columns: minmax(230px, 0.62fr) minmax(0, 1.38fr);
+  gap: clamp(32px, 6vw, 68px);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px;
+}
+
+.columns article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.columns ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.education-list {
+  display: grid;
+  gap: 20px;
+}
+
+.education-list article {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.education-list article:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.education-list h3 {
+  margin-top: 4px;
+  margin-bottom: 3px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 30px 0 46px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 860px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  .intro-grid,
+  .two-column-section {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    position: static;
+    max-width: 420px;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 15px;
+  }
+
+  .page-shell,
+  footer {
+    width: min(100% - 30px, 1060px);
+  }
+
+.site-header {
+    padding: 15px;
+  }
+
+  nav {
+    gap: 10px 16px;
+    font-size: 13px;
+  }
+
+  .intro-grid {
+    padding-top: 34px;
+  }
+
+  .profile-card {
+    padding: 16px;
+  }
+
+  .section {
+    padding: 46px 0;
+  }
+
+  .section-heading.with-link {
+    display: block;
+  }
+
+  .section-link {
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .research-interests {
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(42px, 14vw, 62px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Research philosophy figure */
+.philosophy {
+  width: min(1320px, calc(100vw - 48px));
+  max-width: none;
+  margin-left: 50%;
+  padding-top: 46px;
+  transform: translateX(-50%);
+}
+
+.philosophy .section-heading {
+  margin-bottom: 14px;
+}
+
+.philosophy-label {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+}
+
+.philosophy-figure {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: var(--paper);
+  box-shadow: none;
+}
+
+.philosophy-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  border-radius: 0;
+}

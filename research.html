@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Research by Ganlin Chen on phase transformations, defects, interfaces, corrosion, and computational alloy design."
+    />
+    <title>Research | Ganlin Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="index.html">Ganlin Chen</a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="notes.html">Research Notes</a>
+        <a href="CV_Ganlin_2026.pdf">CV</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <p class="eyebrow">Research</p>
+        <h1>Mechanisms, theory, and alloy design</h1>
+        <p>
+          My research integrates theoretical modeling, atomistic simulation,
+          and data-driven methods to understand and design complex alloy
+          systems.
+        </p>
+      </section>
+
+      <section id="philosophy" class="section philosophy">
+        <div class="section-heading">
+          <p class="eyebrow philosophy-label">Research philosophy</p>
+        </div>
+        <figure class="philosophy-figure">
+          <img
+            src="Research_Approach_Flowchart.png"
+            alt="Research philosophy flowchart: problems are investigated to reveal mechanisms, mechanisms are generalized into theory, and theory is applied to design. Each design reveals the next interesting problem."
+          />
+        </figure>
+      </section>
+
+      <section id="research" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Research areas</p>
+          <h2>Theoretical and computational studies in alloys</h2>
+        </div>
+        <div class="content-list">
+          <article>
+            <h3>Phase transformations and deformation in titanium alloys</h3>
+            <p>
+              I study how phase stability, free-energy landscapes, and local
+              atomic structures control competing deformation modes in
+              metastable beta titanium alloys, including twinning, slip, and
+              transformation-mediated mechanisms.
+            </p>
+          </article>
+          <article>
+            <h3>Interface chemistry and surface engineering</h3>
+            <p>
+              I investigate how solutes, intermetallic particles, grain
+              boundaries, and oxide surfaces influence cathodic activity,
+              localized corrosion, and environmental stability in alloy
+              systems.
+            </p>
+          </article>
+          <article>
+            <h3>Defect engineering in structural alloys</h3>
+            <p>
+              I connect twins, slip, defects, and local atomic structures to
+              mechanical performance and mesoscale deformation behavior in
+              structural alloys.
+            </p>
+          </article>
+          <article>
+            <h3>Advanced computational methods for materials design</h3>
+            <p>
+              I develop and use atomistic simulation, free-energy methods, and
+              data-driven modeling to connect mechanisms across scales and
+              support rational alloy design.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Ganlin Chen</p>
+      <p>
+        <a href="mailto:gavincgl@umich.edu">gavincgl@umich.edu</a>
+        <span aria-hidden="true"> · </span>
+        <a href="CV_Ganlin_2026.pdf">CV</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

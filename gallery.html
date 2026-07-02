@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Gallery page for Ganlin Chen." />
+    <title>Gallery | Ganlin Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="index.html">Ganlin Chen</a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="publications.html">Publications</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="notes.html">Research Notes</a>
+        <a href="CV_Ganlin_2026.pdf">CV</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero blank-page">
+        <p class="eyebrow">Gallery</p>
+        <h1>Gallery</h1>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Ganlin Chen</p>
+      <p>
+        <a href="mailto:gavincgl@umich.edu">gavincgl@umich.edu</a>
+        <span aria-hidden="true"> · </span>
+        <a href="CV_Ganlin_2026.pdf">CV</a>
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
